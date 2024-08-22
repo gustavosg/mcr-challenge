@@ -101,8 +101,10 @@ A aplicação estará acessível em [https://localhost:5001/swagger](https://loc
 cd Api
 # restaure todos os pacotes necessários: 
 dotnet restore .\Api.csproj
+# compile a aplicação: 
+dotnet build .\Api.csproj
 # inicie a aplicação
-dotnet run
+dotnet run .\Api.csproj
 ```
 
 Aguarde a aplicação terminar de carregar, e no browser, entre em [https://localhost:5001/swagger](https://localhost:5001/swagger). Os endpoints estarão disponíveis para serem executados.
@@ -158,10 +160,14 @@ docker-compose up -d
 Entre na raiz do projeto, e execute o seguinte comando: 
 
 ```bash
-# para compilar a alteração
-> dotnet build .\Api\Api.csproj
+# entre no diretório Api
+cd Tests
+# restaure todos os pacotes necessários: 
+dotnet restore .\Tests.csproj
+# compile a aplicação: 
+dotnet build .\Tests.csproj
 # para realizar os testes
-> dotnet test .\Tests\Tests.csproj
+dotnet test .\Tests.csproj
 ```
 
 Aguarde, e a aplicação irá trazer o resultado. Atualmente há 4 testes implementados, o resultado será similar à : 
