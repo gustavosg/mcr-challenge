@@ -1,7 +1,7 @@
 
 # Motorcycle Rental Challenge
 
-Projeto desenvolvimento em .NET Core 8, utilizando arquitetura Clean Architecture. Este serviço utiliza, como dependências, serviços docker em Container, aos quais contamos com: 
+Projeto desenvolvimento em .NET Core 8, utilizando arquitetura Clean Architecture. Este projeto utiliza, como dependências, serviços docker em Container, aos quais contamos com: 
 
 - Postgres;
 - Kafka;
