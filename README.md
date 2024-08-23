@@ -129,6 +129,19 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJjYzUzNTc5Ni1iZmQwLTQ1
 
 Com isso, poderá executar chamadas que precisem de autenticação. 
 
+#### 4.2 Endpoints de utilização: 
+
+Os seguintes endpoints são utilizados para executar as rotinas necessárias da aplicação: 
+
+- Motorcycle:
+  - Endpoints de cadastro de motos.
+
+- Rental:
+  - Endpoints de cadastro de planos de aluguel. No momento, somente estão disponíveis para consulta.
+  
+- MotorcycleRental:
+  - Endpoints utilizados para realizar o aluguel de uma moto à um Entregador. Ponto de atenção ao endpoint [simulate-price](/api/v1/motorcyclerental/simulate-price), que simula o preço de devolução.
+
 ### 5. Parando e Removendo os Contêineres
 
 Para parar e remover os contêineres, execute:
